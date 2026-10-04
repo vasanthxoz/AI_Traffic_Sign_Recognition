@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI-Based Traffic Sign Recognition</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<header>
+  <h1>🚦 AI-Based Traffic Sign Recognition</h1>
+  <p>Image Recognition + Knowledge Base + IF–THEN Rules</p>
+  <nav><a href="{{ url_for('index') }}">Recognize</a></nav>
+</header>
+<main>{% block content %}{% endblock %}</main>
+</body>
+</html>

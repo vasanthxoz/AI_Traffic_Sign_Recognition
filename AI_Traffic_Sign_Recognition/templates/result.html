@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="card result {{ 'ok' if r.recognized else 'unknown' }}">
+  <div class="pics">
+    <figure><img src="{{ input_url }}" alt="input"><figcaption>Input image</figcaption></figure>
+    {% if r.recognized %}
+    <figure><img src="{{ url_for('reference_file', name=r.image) }}" alt="matched"><figcaption>Matched sign</figcaption></figure>
+    {% endif %}
+  </div>
+  <div class="info">
+    {% if r.recognized %}
+    <h2>{{ r.name }}</h2>
+    <table>
+      <tr><th>Category</th><td>{{ r.category }}</td></tr>
+      <tr><th>Description</th><td>{{ r.description }}</td></tr>
+      <tr><th>Meaning</th><td>{{ r.meaning }}</td></tr>
+      <tr><th>Road instruction</th><td><strong>{{ r.instruction }}</strong></td></tr>
+      <tr><th>Related traffic rules</th><td>{{ r.related_rules }}</td></tr>
+      <tr><th>Rule-based notes</th><td>{{ r.category_rule }}<br>{{ r.legal_note }}</td></tr>
+      <tr><th>Match confidence</th><td>{{ r.confidence }}%</td></tr>
+    </table>
+    {% else %}
+    <h2>Sign not recognised</h2>
+    <p>{{ r.instruction }}</p>
+    <p class="muted">Best guess was "{{ r.sign_id }}" with only {{ r.confidence }}% similarity.</p>
+    {% endif %}
+  </div>
+</section>
+
+<section class="card">
+  <h3>Rules fired (IF–THEN reasoning)</h3>
+  <ol class="rules">{% for f in r.fired_rules %}<li><code>{{ f.rule_id }}</code> {{ f.text }}</li>{% endfor %}</ol>
+</section>
+
+{% if r.alternatives %}
+<section class="card">
+  <h3>Other close matches</h3>
+  <ul>{% for a in r.alternatives %}<li>{{ a.name }} &mdash; {{ a.score }}%</li>{% endfor %}</ul>
+</section>
+{% endif %}
+<p><a class="btn" href="{{ url_for('index') }}">Recognize another</a></p>
+{% endblock %}

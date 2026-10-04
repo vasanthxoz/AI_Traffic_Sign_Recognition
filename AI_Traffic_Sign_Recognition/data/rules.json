@@ -1,0 +1,2136 @@
+[
+  {
+    "rule_id": "SIGN-NO_ENTRY",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "no_entry"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Entry of vehicles is prohibited.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"NO ENTRY\" THEN display \"Entry of vehicles is prohibited.\""
+  },
+  {
+    "rule_id": "SIGN-NO_PARKING",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "no_parking"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Parking is not allowed in this area.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"NO PARKING\" THEN display \"Parking is not allowed in this area.\""
+  },
+  {
+    "rule_id": "SIGN-NO_STOPPING",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "no_stopping"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Do not stop your vehicle in this area.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"NO STOPPING\" THEN display \"Do not stop your vehicle in this area.\""
+  },
+  {
+    "rule_id": "SIGN-NO_UTURN",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "no_uturn"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "U-turn is prohibited; continue straight or find a designated turning point.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"NO U-TURN\" THEN display \"U-turn is prohibited; continue straight or find a designated turning point.\""
+  },
+  {
+    "rule_id": "SIGN-NO_LEFT_TURN",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "no_left_turn"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Do not turn left at this junction.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"NO LEFT TURN\" THEN display \"Do not turn left at this junction.\""
+  },
+  {
+    "rule_id": "SIGN-NO_RIGHT_TURN",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "no_right_turn"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Do not turn right at this junction.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"NO RIGHT TURN\" THEN display \"Do not turn right at this junction.\""
+  },
+  {
+    "rule_id": "SIGN-NO_OVERTAKING",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "no_overtaking"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Do not overtake other vehicles in this zone.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"NO OVERTAKING\" THEN display \"Do not overtake other vehicles in this zone.\""
+  },
+  {
+    "rule_id": "SIGN-HORN_PROHIBITED",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "horn_prohibited"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Do not use the horn in this area.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"HORN PROHIBITED\" THEN display \"Do not use the horn in this area.\""
+  },
+  {
+    "rule_id": "SIGN-SPEED_LIMIT_20",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "speed_limit_20"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Maximum permitted speed is 20 km/h.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"SPEED LIMIT 20\" THEN display \"Maximum permitted speed is 20 km/h.\""
+  },
+  {
+    "rule_id": "SIGN-SPEED_LIMIT_30",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "speed_limit_30"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Maximum permitted speed is 30 km/h.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"SPEED LIMIT 30\" THEN display \"Maximum permitted speed is 30 km/h.\""
+  },
+  {
+    "rule_id": "SIGN-SPEED_LIMIT_40",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "speed_limit_40"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Maximum permitted speed is 40 km/h.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"SPEED LIMIT 40\" THEN display \"Maximum permitted speed is 40 km/h.\""
+  },
+  {
+    "rule_id": "SIGN-SPEED_LIMIT_50",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "speed_limit_50"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Maximum permitted speed is 50 km/h.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"SPEED LIMIT 50\" THEN display \"Maximum permitted speed is 50 km/h.\""
+  },
+  {
+    "rule_id": "SIGN-SPEED_LIMIT_60",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "speed_limit_60"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Maximum permitted speed is 60 km/h.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"SPEED LIMIT 60\" THEN display \"Maximum permitted speed is 60 km/h.\""
+  },
+  {
+    "rule_id": "SIGN-SPEED_LIMIT_70",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "speed_limit_70"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Maximum permitted speed is 70 km/h.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"SPEED LIMIT 70\" THEN display \"Maximum permitted speed is 70 km/h.\""
+  },
+  {
+    "rule_id": "SIGN-SPEED_LIMIT_80",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "speed_limit_80"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Maximum permitted speed is 80 km/h.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"SPEED LIMIT 80\" THEN display \"Maximum permitted speed is 80 km/h.\""
+  },
+  {
+    "rule_id": "SIGN-SPEED_LIMIT_100",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "speed_limit_100"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Maximum permitted speed is 100 km/h.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"SPEED LIMIT 100\" THEN display \"Maximum permitted speed is 100 km/h.\""
+  },
+  {
+    "rule_id": "SIGN-NO_TRUCKS",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "no_trucks"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Trucks must not enter this road.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"TRUCKS PROHIBITED\" THEN display \"Trucks must not enter this road.\""
+  },
+  {
+    "rule_id": "SIGN-NO_PEDESTRIANS",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "no_pedestrians"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Pedestrians must not walk on this road.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"PEDESTRIANS PROHIBITED\" THEN display \"Pedestrians must not walk on this road.\""
+  },
+  {
+    "rule_id": "SIGN-NO_CYCLES",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "no_cycles"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Cyclists must not enter this road.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"CYCLES PROHIBITED\" THEN display \"Cyclists must not enter this road.\""
+  },
+  {
+    "rule_id": "SIGN-NO_VEHICLES",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "no_vehicles"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "No vehicles are allowed beyond this point.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"ALL VEHICLES PROHIBITED\" THEN display \"No vehicles are allowed beyond this point.\""
+  },
+  {
+    "rule_id": "SIGN-WIDTH_LIMIT",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "width_limit"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Do not enter if your vehicle is wider than 2.5 m.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"WIDTH LIMIT\" THEN display \"Do not enter if your vehicle is wider than 2.5 m.\""
+  },
+  {
+    "rule_id": "SIGN-HEIGHT_LIMIT",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "height_limit"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Do not enter if your vehicle is taller than 3.5 m.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"HEIGHT LIMIT\" THEN display \"Do not enter if your vehicle is taller than 3.5 m.\""
+  },
+  {
+    "rule_id": "SIGN-WEIGHT_LIMIT",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "weight_limit"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Do not proceed if your vehicle weighs more than 10 tonnes.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"WEIGHT LIMIT\" THEN display \"Do not proceed if your vehicle weighs more than 10 tonnes.\""
+  },
+  {
+    "rule_id": "SIGN-SPEED_LIMIT_110",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "speed_limit_110"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Maximum permitted speed is 110 km/h.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"SPEED LIMIT 110\" THEN display \"Maximum permitted speed is 110 km/h.\""
+  },
+  {
+    "rule_id": "SIGN-SPEED_LIMIT_120",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "speed_limit_120"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Maximum permitted speed is 120 km/h.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"SPEED LIMIT 120\" THEN display \"Maximum permitted speed is 120 km/h.\""
+  },
+  {
+    "rule_id": "SIGN-NO_MOTORBIKES",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "no_motorbikes"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Motorcycles must not enter this road.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"MOTORCYCLES PROHIBITED\" THEN display \"Motorcycles must not enter this road.\""
+  },
+  {
+    "rule_id": "SIGN-NO_ANIMALS",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "no_animals"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Do not bring animals or animal-drawn carts onto this road.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"ANIMALS PROHIBITED\" THEN display \"Do not bring animals or animal-drawn carts onto this road.\""
+  },
+  {
+    "rule_id": "SIGN-NO_HEAVY_VEHICLES",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "no_heavy_vehicles"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Heavy vehicles must not enter this road.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"HEAVY VEHICLES PROHIBITED\" THEN display \"Heavy vehicles must not enter this road.\""
+  },
+  {
+    "rule_id": "SIGN-END_SPEED_LIMIT",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "end_speed_limit"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Speed restriction ends; resume normal safe speed for road conditions.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"END OF SPEED LIMIT\" THEN display \"Speed restriction ends; resume normal safe speed for road conditions.\""
+  },
+  {
+    "rule_id": "SIGN-TURN_LEFT_AHEAD",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "turn_left_ahead"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Turn left at the junction ahead.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"TURN LEFT AHEAD\" THEN display \"Turn left at the junction ahead.\""
+  },
+  {
+    "rule_id": "SIGN-TURN_RIGHT_AHEAD",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "turn_right_ahead"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Turn right at the junction ahead.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"TURN RIGHT AHEAD\" THEN display \"Turn right at the junction ahead.\""
+  },
+  {
+    "rule_id": "SIGN-AHEAD_ONLY",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "ahead_only"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Go straight; turning is not allowed.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"AHEAD ONLY\" THEN display \"Go straight; turning is not allowed.\""
+  },
+  {
+    "rule_id": "SIGN-KEEP_LEFT",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "keep_left"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Keep to the left.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"KEEP LEFT\" THEN display \"Keep to the left.\""
+  },
+  {
+    "rule_id": "SIGN-KEEP_RIGHT",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "keep_right"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Keep to the right.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"KEEP RIGHT\" THEN display \"Keep to the right.\""
+  },
+  {
+    "rule_id": "SIGN-ROUNDABOUT",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "roundabout"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Enter the roundabout and move in the direction shown.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"ROUNDABOUT\" THEN display \"Enter the roundabout and move in the direction shown.\""
+  },
+  {
+    "rule_id": "SIGN-COMPULSORY_HORN",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "compulsory_horn"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Sound your horn.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"COMPULSORY HORN\" THEN display \"Sound your horn.\""
+  },
+  {
+    "rule_id": "SIGN-CYCLE_TRACK",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "cycle_track"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Only cycles may use this track.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"CYCLE TRACK\" THEN display \"Only cycles may use this track.\""
+  },
+  {
+    "rule_id": "SIGN-PEDESTRIANS_ONLY",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "pedestrians_only"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Only pedestrians may use this path.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"PEDESTRIANS ONLY\" THEN display \"Only pedestrians may use this path.\""
+  },
+  {
+    "rule_id": "SIGN-MIN_SPEED_30",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "min_speed_30"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Minimum speed is 30 km/h.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"MINIMUM SPEED 30\" THEN display \"Minimum speed is 30 km/h.\""
+  },
+  {
+    "rule_id": "SIGN-GO_LEFT",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "go_left"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Bear left at the next junction.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"GO LEFT\" THEN display \"Bear left at the next junction.\""
+  },
+  {
+    "rule_id": "SIGN-GO_RIGHT",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "go_right"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Bear right at the next junction.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"GO RIGHT\" THEN display \"Bear right at the next junction.\""
+  },
+  {
+    "rule_id": "SIGN-PASS_EITHER_SIDE",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "pass_either_side"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Pass the obstruction on either side.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"PASS EITHER SIDE\" THEN display \"Pass the obstruction on either side.\""
+  },
+  {
+    "rule_id": "SIGN-STOP",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "stop"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Stop the vehicle completely before proceeding.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"STOP\" THEN display \"Stop the vehicle completely before proceeding.\""
+  },
+  {
+    "rule_id": "SIGN-GIVE_WAY",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "give_way"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Slow down and give way to other traffic.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"GIVE WAY\" THEN display \"Slow down and give way to other traffic.\""
+  },
+  {
+    "rule_id": "SIGN-PRIORITY_ROAD",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "priority_road"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Continue; you have priority over side roads.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"PRIORITY ROAD\" THEN display \"Continue; you have priority over side roads.\""
+  },
+  {
+    "rule_id": "SIGN-END_PRIORITY_ROAD",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "end_priority_road"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Priority ends; give way as per normal junction rules.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"END OF PRIORITY ROAD\" THEN display \"Priority ends; give way as per normal junction rules.\""
+  },
+  {
+    "rule_id": "SIGN-PEDESTRIAN_CROSSING",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "pedestrian_crossing"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Slow down and give way to pedestrians.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"PEDESTRIAN CROSSING\" THEN display \"Slow down and give way to pedestrians.\""
+  },
+  {
+    "rule_id": "SIGN-SCHOOL_AHEAD",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "school_ahead"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Reduce speed and drive carefully; watch for children.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"SCHOOL AHEAD\" THEN display \"Reduce speed and drive carefully; watch for children.\""
+  },
+  {
+    "rule_id": "SIGN-LEFT_CURVE",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "left_curve"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Slow down and keep left through the curve.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"LEFT CURVE\" THEN display \"Slow down and keep left through the curve.\""
+  },
+  {
+    "rule_id": "SIGN-RIGHT_CURVE",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "right_curve"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Slow down and keep left through the curve.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"RIGHT CURVE\" THEN display \"Slow down and keep left through the curve.\""
+  },
+  {
+    "rule_id": "SIGN-HAIRPIN_BEND",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "hairpin_bend"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Reduce speed sharply and drive in low gear.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"HAIRPIN BEND\" THEN display \"Reduce speed sharply and drive in low gear.\""
+  },
+  {
+    "rule_id": "SIGN-ROAD_NARROWS",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "road_narrows"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Slow down and be ready to give way to oncoming traffic.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"ROAD NARROWS\" THEN display \"Slow down and be ready to give way to oncoming traffic.\""
+  },
+  {
+    "rule_id": "SIGN-SLIPPERY_ROAD",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "slippery_road"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Slow down and avoid sudden braking or steering.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"SLIPPERY ROAD\" THEN display \"Slow down and avoid sudden braking or steering.\""
+  },
+  {
+    "rule_id": "SIGN-FALLING_ROCKS",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "falling_rocks"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Drive carefully and do not stop in this zone.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"FALLING ROCKS\" THEN display \"Drive carefully and do not stop in this zone.\""
+  },
+  {
+    "rule_id": "SIGN-SPEED_BREAKER",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "speed_breaker"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Slow down before the speed breaker.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"SPEED BREAKER\" THEN display \"Slow down before the speed breaker.\""
+  },
+  {
+    "rule_id": "SIGN-CROSS_ROAD",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "cross_road"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Slow down and look out for crossing traffic.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"CROSS ROAD\" THEN display \"Slow down and look out for crossing traffic.\""
+  },
+  {
+    "rule_id": "SIGN-T_JUNCTION",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "t_junction"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Slow down and prepare to turn or give way.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"T-JUNCTION\" THEN display \"Slow down and prepare to turn or give way.\""
+  },
+  {
+    "rule_id": "SIGN-ROUNDABOUT_AHEAD",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "roundabout_ahead"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Slow down and prepare to give way at the roundabout.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"ROUNDABOUT AHEAD\" THEN display \"Slow down and prepare to give way at the roundabout.\""
+  },
+  {
+    "rule_id": "SIGN-SIGNALS_AHEAD",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "signals_ahead"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Slow down and be ready to stop at the signal.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"TRAFFIC SIGNALS AHEAD\" THEN display \"Slow down and be ready to stop at the signal.\""
+  },
+  {
+    "rule_id": "SIGN-LEVEL_CROSSING",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "level_crossing"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Slow down and stop if a train is approaching.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"LEVEL CROSSING\" THEN display \"Slow down and stop if a train is approaching.\""
+  },
+  {
+    "rule_id": "SIGN-MEN_AT_WORK",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "men_at_work"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Slow down and follow the diversion or flagman.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"MEN AT WORK\" THEN display \"Slow down and follow the diversion or flagman.\""
+  },
+  {
+    "rule_id": "SIGN-STEEP_DESCENT",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "steep_descent"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Use a low gear and control speed; avoid hard braking.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"STEEP DESCENT\" THEN display \"Use a low gear and control speed; avoid hard braking.\""
+  },
+  {
+    "rule_id": "SIGN-STEEP_ASCENT",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "steep_ascent"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Shift to a lower gear and keep a steady speed.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"STEEP ASCENT\" THEN display \"Shift to a lower gear and keep a steady speed.\""
+  },
+  {
+    "rule_id": "SIGN-TWO_WAY_TRAFFIC",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "two_way_traffic"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Keep to your side and watch for oncoming vehicles.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"TWO-WAY TRAFFIC\" THEN display \"Keep to your side and watch for oncoming vehicles.\""
+  },
+  {
+    "rule_id": "SIGN-ANIMALS_CROSSING",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "animals_crossing"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Slow down and be ready to stop.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"ANIMALS CROSSING\" THEN display \"Slow down and be ready to stop.\""
+  },
+  {
+    "rule_id": "SIGN-GENERAL_DANGER",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "general_danger"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Be extra careful and reduce speed.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"GENERAL DANGER\" THEN display \"Be extra careful and reduce speed.\""
+  },
+  {
+    "rule_id": "SIGN-UNEVEN_ROAD",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "uneven_road"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Reduce speed and hold the steering firmly.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"UNEVEN ROAD\" THEN display \"Reduce speed and hold the steering firmly.\""
+  },
+  {
+    "rule_id": "SIGN-LOOSE_GRAVEL",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "loose_gravel"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Slow down and avoid sudden braking or sharp steering.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"LOOSE GRAVEL\" THEN display \"Slow down and avoid sudden braking or sharp steering.\""
+  },
+  {
+    "rule_id": "SIGN-FLOOD_ROAD",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "flood_road"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Slow down and check the water depth before crossing.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"FLOOD / WATERLOGGED ROAD\" THEN display \"Slow down and check the water depth before crossing.\""
+  },
+  {
+    "rule_id": "SIGN-SIDE_ROAD_LEFT",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "side_road_left"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Watch for traffic entering from the left.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"SIDE ROAD LEFT\" THEN display \"Watch for traffic entering from the left.\""
+  },
+  {
+    "rule_id": "SIGN-SIDE_ROAD_RIGHT",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "side_road_right"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Watch for traffic entering from the right.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"SIDE ROAD RIGHT\" THEN display \"Watch for traffic entering from the right.\""
+  },
+  {
+    "rule_id": "SIGN-STAGGERED_JUNCTION",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "staggered_junction"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Slow down and observe carefully for crossing traffic.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"STAGGERED JUNCTION\" THEN display \"Slow down and observe carefully for crossing traffic.\""
+  },
+  {
+    "rule_id": "SIGN-NARROW_BRIDGE",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "narrow_bridge"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Slow down and give way to oncoming traffic if the bridge is one-lane wide.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"NARROW BRIDGE\" THEN display \"Slow down and give way to oncoming traffic if the bridge is one-lane wide.\""
+  },
+  {
+    "rule_id": "SIGN-ACCIDENT_ZONE",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "accident_zone"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Drive with extra caution; reduce speed and stay alert.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"ACCIDENT PRONE ZONE\" THEN display \"Drive with extra caution; reduce speed and stay alert.\""
+  },
+  {
+    "rule_id": "SIGN-DOUBLE_BEND",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "double_bend"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Reduce speed and keep to the left; do not overtake.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"DOUBLE BEND\" THEN display \"Reduce speed and keep to the left; do not overtake.\""
+  },
+  {
+    "rule_id": "SIGN-RISK_GROUNDING",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "risk_grounding"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Low vehicles should approach slowly and at an angle if possible.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"RISK OF GROUNDING\" THEN display \"Low vehicles should approach slowly and at an angle if possible.\""
+  },
+  {
+    "rule_id": "SIGN-PARKING",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "parking"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "You may park your vehicle in this area.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"PARKING\" THEN display \"You may park your vehicle in this area.\""
+  },
+  {
+    "rule_id": "SIGN-HOSPITAL",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "hospital"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Drive quietly and give way to ambulances.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"HOSPITAL\" THEN display \"Drive quietly and give way to ambulances.\""
+  },
+  {
+    "rule_id": "SIGN-FUEL_STATION",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "fuel_station"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Fuel is available ahead; slow down to enter safely.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"PETROL PUMP\" THEN display \"Fuel is available ahead; slow down to enter safely.\""
+  },
+  {
+    "rule_id": "SIGN-BUS_STOP",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "bus_stop"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Give way to buses and pedestrians; do not park here.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"BUS STOP\" THEN display \"Give way to buses and pedestrians; do not park here.\""
+  },
+  {
+    "rule_id": "SIGN-ONE_WAY",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "one_way"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Drive only in the direction of the arrow.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"ONE WAY\" THEN display \"Drive only in the direction of the arrow.\""
+  },
+  {
+    "rule_id": "SIGN-DEAD_END",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "dead_end"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "No through road; plan to turn around.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"DEAD END\" THEN display \"No through road; plan to turn around.\""
+  },
+  {
+    "rule_id": "SIGN-FIRST_AID",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "first_aid"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "First-aid help is available nearby.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"FIRST AID\" THEN display \"First-aid help is available nearby.\""
+  },
+  {
+    "rule_id": "SIGN-TELEPHONE",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "telephone"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "A phone is available here if you need help.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"TELEPHONE\" THEN display \"A phone is available here if you need help.\""
+  },
+  {
+    "rule_id": "SIGN-TOURIST_INFO",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "tourist_info"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Tourist information is available here.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"TOURIST INFORMATION\" THEN display \"Tourist information is available here.\""
+  },
+  {
+    "rule_id": "SIGN-REST_AREA",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "rest_area"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "You may stop to rest, eat, or use facilities here.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"REST AREA\" THEN display \"You may stop to rest, eat, or use facilities here.\""
+  },
+  {
+    "rule_id": "SIGN-TOLL_AHEAD",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "toll_ahead"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Prepare payment or FASTag and slow down for the toll booth.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"TOLL AHEAD\" THEN display \"Prepare payment or FASTag and slow down for the toll booth.\""
+  },
+  {
+    "rule_id": "SIGN-PETROL_AHEAD",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "petrol_ahead"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Fuel station is available shortly ahead on this road.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"PETROL STATION AHEAD\" THEN display \"Fuel station is available shortly ahead on this road.\""
+  },
+  {
+    "rule_id": "SIGN-NO_THROUGH_ROAD_RIGHT",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "no_through_road_right"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "The right branch of the junction is a dead end; plan accordingly.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"NO THROUGH ROAD ON RIGHT\" THEN display \"The right branch of the junction is a dead end; plan accordingly.\""
+  },
+  {
+    "rule_id": "SIGN-RED_LIGHT",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "red_light"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Stop behind the stop line and wait.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"RED LIGHT\" THEN display \"Stop behind the stop line and wait.\""
+  },
+  {
+    "rule_id": "SIGN-AMBER_LIGHT",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "amber_light"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Slow down and prepare to stop.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"AMBER LIGHT\" THEN display \"Slow down and prepare to stop.\""
+  },
+  {
+    "rule_id": "SIGN-GREEN_LIGHT",
+    "type": "sign",
+    "if": [
+      {
+        "field": "sign_id",
+        "op": "==",
+        "value": "green_light"
+      },
+      {
+        "field": "confidence",
+        "op": ">=",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "instruction": "Go, but check that the junction is clear.",
+      "status": "RECOGNIZED"
+    },
+    "text": "IF the recognized sign is \"GREEN LIGHT\" THEN display \"Go, but check that the junction is clear.\""
+  },
+  {
+    "rule_id": "CAT-PROHIBITORY",
+    "type": "category",
+    "if": [
+      {
+        "field": "category",
+        "op": "==",
+        "value": "Prohibitory"
+      },
+      {
+        "field": "status",
+        "op": "==",
+        "value": "RECOGNIZED"
+      }
+    ],
+    "then": {
+      "group": "Regulatory",
+      "category_rule": "Prohibitory sign - tells the driver what must NOT be done."
+    },
+    "text": "IF the sign category is \"Prohibitory\" THEN group = \"Regulatory\" and note \"Prohibitory sign - tells the driver what must NOT be done.\""
+  },
+  {
+    "rule_id": "CAT-MANDATORY",
+    "type": "category",
+    "if": [
+      {
+        "field": "category",
+        "op": "==",
+        "value": "Mandatory"
+      },
+      {
+        "field": "status",
+        "op": "==",
+        "value": "RECOGNIZED"
+      }
+    ],
+    "then": {
+      "group": "Regulatory",
+      "category_rule": "Mandatory sign - tells the driver what MUST be done."
+    },
+    "text": "IF the sign category is \"Mandatory\" THEN group = \"Regulatory\" and note \"Mandatory sign - tells the driver what MUST be done.\""
+  },
+  {
+    "rule_id": "CAT-PRIORITY",
+    "type": "category",
+    "if": [
+      {
+        "field": "category",
+        "op": "==",
+        "value": "Priority"
+      },
+      {
+        "field": "status",
+        "op": "==",
+        "value": "RECOGNIZED"
+      }
+    ],
+    "then": {
+      "group": "Regulatory",
+      "category_rule": "Priority sign - decides who has the right of way."
+    },
+    "text": "IF the sign category is \"Priority\" THEN group = \"Regulatory\" and note \"Priority sign - decides who has the right of way.\""
+  },
+  {
+    "rule_id": "CAT-WARNING",
+    "type": "category",
+    "if": [
+      {
+        "field": "category",
+        "op": "==",
+        "value": "Warning"
+      },
+      {
+        "field": "status",
+        "op": "==",
+        "value": "RECOGNIZED"
+      }
+    ],
+    "then": {
+      "group": "Cautionary",
+      "category_rule": "Warning sign - alerts the driver to a hazard ahead."
+    },
+    "text": "IF the sign category is \"Warning\" THEN group = \"Cautionary\" and note \"Warning sign - alerts the driver to a hazard ahead.\""
+  },
+  {
+    "rule_id": "CAT-INFORMATORY",
+    "type": "category",
+    "if": [
+      {
+        "field": "category",
+        "op": "==",
+        "value": "Informatory"
+      },
+      {
+        "field": "status",
+        "op": "==",
+        "value": "RECOGNIZED"
+      }
+    ],
+    "then": {
+      "group": "Informatory",
+      "category_rule": "Informatory sign - gives guidance or facility information."
+    },
+    "text": "IF the sign category is \"Informatory\" THEN group = \"Informatory\" and note \"Informatory sign - gives guidance or facility information.\""
+  },
+  {
+    "rule_id": "CAT-TRAFFIC-SIGNAL",
+    "type": "category",
+    "if": [
+      {
+        "field": "category",
+        "op": "==",
+        "value": "Traffic Signal"
+      },
+      {
+        "field": "status",
+        "op": "==",
+        "value": "RECOGNIZED"
+      }
+    ],
+    "then": {
+      "group": "Signal",
+      "category_rule": "Traffic signal - light-controlled instruction for right of way."
+    },
+    "text": "IF the sign category is \"Traffic Signal\" THEN group = \"Signal\" and note \"Traffic signal - light-controlled instruction for right of way.\""
+  },
+  {
+    "rule_id": "GROUP-REGULATORY",
+    "type": "group",
+    "if": [
+      {
+        "field": "group",
+        "op": "==",
+        "value": "Regulatory"
+      }
+    ],
+    "then": {
+      "legal_note": "Regulatory sign - non-compliance is a punishable traffic offence."
+    },
+    "text": "IF the sign group is \"Regulatory\" THEN legal note = \"Regulatory sign - non-compliance is a punishable traffic offence.\""
+  },
+  {
+    "rule_id": "GROUP-CAUTIONARY",
+    "type": "group",
+    "if": [
+      {
+        "field": "group",
+        "op": "==",
+        "value": "Cautionary"
+      }
+    ],
+    "then": {
+      "legal_note": "Cautionary sign - not a legal order, but ignoring it endangers road safety."
+    },
+    "text": "IF the sign group is \"Cautionary\" THEN legal note = \"Cautionary sign - not a legal order, but ignoring it endangers road safety.\""
+  },
+  {
+    "rule_id": "GROUP-INFORMATORY",
+    "type": "group",
+    "if": [
+      {
+        "field": "group",
+        "op": "==",
+        "value": "Informatory"
+      }
+    ],
+    "then": {
+      "legal_note": "Informatory sign - advisory only; no legal restriction."
+    },
+    "text": "IF the sign group is \"Informatory\" THEN legal note = \"Informatory sign - advisory only; no legal restriction.\""
+  },
+  {
+    "rule_id": "GROUP-SIGNAL",
+    "type": "group",
+    "if": [
+      {
+        "field": "group",
+        "op": "==",
+        "value": "Signal"
+      }
+    ],
+    "then": {
+      "legal_note": "Signal - disobeying a traffic signal is a punishable offence."
+    },
+    "text": "IF the sign group is \"Signal\" THEN legal note = \"Signal - disobeying a traffic signal is a punishable offence.\""
+  },
+  {
+    "rule_id": "UNKNOWN-SIGN",
+    "type": "fallback",
+    "if": [
+      {
+        "field": "confidence",
+        "op": "<",
+        "value": 60.0
+      }
+    ],
+    "then": {
+      "status": "UNKNOWN",
+      "instruction": "Sign not recognised. Please upload a clearer image of a traffic sign."
+    },
+    "text": "IF the image match confidence is below 60% THEN report the sign as UNKNOWN"
+  }
+]

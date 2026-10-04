@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="card">
+  <h2>Upload a traffic sign image</h2>
+  {% if error %}<p class="error">{{ error }}</p>{% endif %}
+  <form action="{{ url_for('recognize') }}" method="post" enctype="multipart/form-data">
+    <input type="file" name="image" accept="image/*" required>
+    <button type="submit">Recognize Sign</button>
+  </form>
+</section>
+<section class="card">
+  <h2>System workflow</h2>
+  <ol class="flow">
+    <li>Input traffic sign image</li><li>Image recognition</li><li>Knowledge base matching</li>
+    <li>IF–THEN rule evaluation</li><li>Traffic sign identification</li><li>Meaning &amp; instructions</li>
+  </ol>
+</section>
+{% endblock %}

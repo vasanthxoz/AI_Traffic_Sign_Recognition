@@ -1,0 +1,922 @@
+[
+  {
+    "sign_id": "no_entry",
+    "name": "NO ENTRY",
+    "category": "Prohibitory",
+    "description": "Solid red circle with a horizontal white bar.",
+    "meaning": "Vehicles are not allowed to enter the road from the direction the sign faces.",
+    "instruction": "Entry of vehicles is prohibited.",
+    "rules": "Usually placed at the exit of a one-way street. Entering is a punishable offence and a collision risk.",
+    "image": "no_entry.jpg"
+  },
+  {
+    "sign_id": "no_parking",
+    "name": "NO PARKING",
+    "category": "Prohibitory",
+    "description": "Blue circle with a red border and one red diagonal bar.",
+    "meaning": "Parking of vehicles is not permitted in this stretch of road.",
+    "instruction": "Parking is not allowed in this area.",
+    "rules": "Stopping briefly to load/unload passengers may be allowed; leaving the vehicle parked can lead to a fine or towing.",
+    "image": "no_parking.jpg"
+  },
+  {
+    "sign_id": "no_stopping",
+    "name": "NO STOPPING",
+    "category": "Prohibitory",
+    "description": "Blue circle with a red border and a red cross.",
+    "meaning": "Vehicles must not stop or wait here, even for a moment.",
+    "instruction": "Do not stop your vehicle in this area.",
+    "rules": "Stopping is allowed only in an emergency or when directed by police/traffic signals.",
+    "image": "no_stopping.jpg"
+  },
+  {
+    "sign_id": "no_uturn",
+    "name": "NO U-TURN",
+    "category": "Prohibitory",
+    "description": "Red-bordered circle with a black U-turn arrow crossed by a red bar.",
+    "meaning": "Vehicles are not allowed to make a U-turn at this location.",
+    "instruction": "U-turn is prohibited; continue straight or find a designated turning point.",
+    "rules": "U-turns near junctions and on busy roads cause accidents and are punishable.",
+    "image": "no_uturn.jpg"
+  },
+  {
+    "sign_id": "no_left_turn",
+    "name": "NO LEFT TURN",
+    "category": "Prohibitory",
+    "description": "Red-bordered circle with a left-turn arrow crossed by a red bar.",
+    "meaning": "Turning left is not permitted at the next junction.",
+    "instruction": "Do not turn left at this junction.",
+    "rules": "Follow the alternate route shown by other signs.",
+    "image": "no_left_turn.jpg"
+  },
+  {
+    "sign_id": "no_right_turn",
+    "name": "NO RIGHT TURN",
+    "category": "Prohibitory",
+    "description": "Red-bordered circle with a right-turn arrow crossed by a red bar.",
+    "meaning": "Turning right is not permitted at the next junction.",
+    "instruction": "Do not turn right at this junction.",
+    "rules": "Follow the alternate route shown by other signs.",
+    "image": "no_right_turn.jpg"
+  },
+  {
+    "sign_id": "no_overtaking",
+    "name": "NO OVERTAKING",
+    "category": "Prohibitory",
+    "description": "Red-bordered circle with a black car beside a red car.",
+    "meaning": "Overtaking other vehicles is prohibited on this stretch of road.",
+    "instruction": "Do not overtake other vehicles in this zone.",
+    "rules": "Applies at curves, bridges and hill crests where visibility is limited.",
+    "image": "no_overtaking.jpg"
+  },
+  {
+    "sign_id": "horn_prohibited",
+    "name": "HORN PROHIBITED",
+    "category": "Prohibitory",
+    "description": "Red-bordered circle with a horn symbol crossed by a red bar.",
+    "meaning": "Sounding the horn is not allowed in this area.",
+    "instruction": "Do not use the horn in this area.",
+    "rules": "Usually placed near hospitals, schools, courts and silence zones.",
+    "image": "horn_prohibited.jpg"
+  },
+  {
+    "sign_id": "speed_limit_20",
+    "name": "SPEED LIMIT 20",
+    "category": "Prohibitory",
+    "description": "Red-bordered circle showing the number 20.",
+    "meaning": "Maximum speed limit of 20 km/h applies.",
+    "instruction": "Maximum permitted speed is 20 km/h.",
+    "rules": "Common near schools and crowded areas. Exceeding the limit is punishable.",
+    "image": "speed_limit_20.jpg"
+  },
+  {
+    "sign_id": "speed_limit_30",
+    "name": "SPEED LIMIT 30",
+    "category": "Prohibitory",
+    "description": "Red-bordered circle showing the number 30.",
+    "meaning": "Maximum speed limit of 30 km/h applies.",
+    "instruction": "Maximum permitted speed is 30 km/h.",
+    "rules": "Common in residential and market areas. Exceeding the limit is punishable.",
+    "image": "speed_limit_30.jpg"
+  },
+  {
+    "sign_id": "speed_limit_40",
+    "name": "SPEED LIMIT 40",
+    "category": "Prohibitory",
+    "description": "Red-bordered circle showing the number 40.",
+    "meaning": "Maximum speed limit of 40 km/h applies.",
+    "instruction": "Maximum permitted speed is 40 km/h.",
+    "rules": "Drive at or below the limit; reduce speed further in bad weather.",
+    "image": "speed_limit_40.jpg"
+  },
+  {
+    "sign_id": "speed_limit_50",
+    "name": "SPEED LIMIT 50",
+    "category": "Prohibitory",
+    "description": "Red-bordered circle showing the number 50.",
+    "meaning": "Maximum speed limit of 50 km/h applies.",
+    "instruction": "Maximum permitted speed is 50 km/h.",
+    "rules": "Typical urban limit. Exceeding the limit is punishable.",
+    "image": "speed_limit_50.jpg"
+  },
+  {
+    "sign_id": "speed_limit_60",
+    "name": "SPEED LIMIT 60",
+    "category": "Prohibitory",
+    "description": "Red-bordered circle showing the number 60.",
+    "meaning": "Maximum speed limit of 60 km/h applies.",
+    "instruction": "Maximum permitted speed is 60 km/h.",
+    "rules": "Drive at or below the limit; keep a safe following distance.",
+    "image": "speed_limit_60.jpg"
+  },
+  {
+    "sign_id": "speed_limit_70",
+    "name": "SPEED LIMIT 70",
+    "category": "Prohibitory",
+    "description": "Red-bordered circle showing the number 70.",
+    "meaning": "Maximum speed limit of 70 km/h applies.",
+    "instruction": "Maximum permitted speed is 70 km/h.",
+    "rules": "Exceeding the limit is punishable; slow down for junctions and crossings.",
+    "image": "speed_limit_70.jpg"
+  },
+  {
+    "sign_id": "speed_limit_80",
+    "name": "SPEED LIMIT 80",
+    "category": "Prohibitory",
+    "description": "Red-bordered circle showing the number 80.",
+    "meaning": "Maximum speed limit of 80 km/h applies.",
+    "instruction": "Maximum permitted speed is 80 km/h.",
+    "rules": "Typical highway limit. Exceeding the limit is punishable.",
+    "image": "speed_limit_80.jpg"
+  },
+  {
+    "sign_id": "speed_limit_100",
+    "name": "SPEED LIMIT 100",
+    "category": "Prohibitory",
+    "description": "Red-bordered circle showing the number 100.",
+    "meaning": "Maximum speed limit of 100 km/h applies.",
+    "instruction": "Maximum permitted speed is 100 km/h.",
+    "rules": "Expressway limit; lower limits apply to heavy vehicles and in bad weather.",
+    "image": "speed_limit_100.jpg"
+  },
+  {
+    "sign_id": "no_trucks",
+    "name": "TRUCKS PROHIBITED",
+    "category": "Prohibitory",
+    "description": "Red-bordered circle with a black truck.",
+    "meaning": "Entry of heavy goods vehicles (trucks) is prohibited.",
+    "instruction": "Trucks must not enter this road.",
+    "rules": "Often applies at certain hours in city areas. Use the designated truck route.",
+    "image": "no_trucks.jpg"
+  },
+  {
+    "sign_id": "no_pedestrians",
+    "name": "PEDESTRIANS PROHIBITED",
+    "category": "Prohibitory",
+    "description": "Red-bordered circle with a walking person crossed by a red bar.",
+    "meaning": "Pedestrians are not allowed on this road or stretch.",
+    "instruction": "Pedestrians must not walk on this road.",
+    "rules": "Common on expressways and bridges. Use the footpath or subway provided.",
+    "image": "no_pedestrians.jpg"
+  },
+  {
+    "sign_id": "no_cycles",
+    "name": "CYCLES PROHIBITED",
+    "category": "Prohibitory",
+    "description": "Red-bordered circle with a black bicycle.",
+    "meaning": "Bicycles are not allowed on this road.",
+    "instruction": "Cyclists must not enter this road.",
+    "rules": "Cyclists should use the alternate route or cycle track.",
+    "image": "no_cycles.jpg"
+  },
+  {
+    "sign_id": "no_vehicles",
+    "name": "ALL VEHICLES PROHIBITED",
+    "category": "Prohibitory",
+    "description": "Empty white circle with a red border.",
+    "meaning": "No vehicle of any type may pass this point in either direction.",
+    "instruction": "No vehicles are allowed beyond this point.",
+    "rules": "Often used for pedestrian zones, markets or closed roads.",
+    "image": "no_vehicles.jpg"
+  },
+  {
+    "sign_id": "width_limit",
+    "name": "WIDTH LIMIT",
+    "category": "Prohibitory",
+    "description": "Red-bordered circle with horizontal arrows between bars and '2.5m'.",
+    "meaning": "Vehicles wider than 2.5 metres are not allowed.",
+    "instruction": "Do not enter if your vehicle is wider than 2.5 m.",
+    "rules": "Applies to narrow roads, bridges and tunnels.",
+    "image": "width_limit.jpg"
+  },
+  {
+    "sign_id": "height_limit",
+    "name": "HEIGHT LIMIT",
+    "category": "Prohibitory",
+    "description": "Red-bordered circle with vertical arrows between bars and '3.5m'.",
+    "meaning": "Vehicles taller than 3.5 metres are not allowed.",
+    "instruction": "Do not enter if your vehicle is taller than 3.5 m.",
+    "rules": "Applies to low bridges, tunnels and overhead cables.",
+    "image": "height_limit.jpg"
+  },
+  {
+    "sign_id": "weight_limit",
+    "name": "WEIGHT LIMIT",
+    "category": "Prohibitory",
+    "description": "Red-bordered circle with the text '10T'.",
+    "meaning": "Vehicles with a gross weight above 10 tonnes are not allowed.",
+    "instruction": "Do not proceed if your vehicle weighs more than 10 tonnes.",
+    "rules": "Applies to weak bridges and light-duty roads.",
+    "image": "weight_limit.jpg"
+  },
+  {
+    "sign_id": "speed_limit_110",
+    "name": "SPEED LIMIT 110",
+    "category": "Prohibitory",
+    "description": "Red-bordered circle showing the number 110.",
+    "meaning": "Maximum speed limit of 110 km/h applies.",
+    "instruction": "Maximum permitted speed is 110 km/h.",
+    "rules": "Common on expressways. Exceeding the limit is punishable; lower limits apply to heavy vehicles.",
+    "image": "speed_limit_110.jpg"
+  },
+  {
+    "sign_id": "speed_limit_120",
+    "name": "SPEED LIMIT 120",
+    "category": "Prohibitory",
+    "description": "Red-bordered circle showing the number 120.",
+    "meaning": "Maximum speed limit of 120 km/h applies.",
+    "instruction": "Maximum permitted speed is 120 km/h.",
+    "rules": "Found on highways and expressways. Exceeding the limit is punishable.",
+    "image": "speed_limit_120.jpg"
+  },
+  {
+    "sign_id": "no_motorbikes",
+    "name": "MOTORCYCLES PROHIBITED",
+    "category": "Prohibitory",
+    "description": "Red-bordered circle with a motorcycle silhouette.",
+    "meaning": "Motorcycles and two-wheelers are not allowed on this road.",
+    "instruction": "Motorcycles must not enter this road.",
+    "rules": "Cyclists should use the alternate designated route.",
+    "image": "no_motorbikes.jpg"
+  },
+  {
+    "sign_id": "no_animals",
+    "name": "ANIMALS PROHIBITED",
+    "category": "Prohibitory",
+    "description": "Red-bordered circle with an animal silhouette crossed by a red bar.",
+    "meaning": "Animal-drawn vehicles and livestock are not permitted on this road.",
+    "instruction": "Do not bring animals or animal-drawn carts onto this road.",
+    "rules": "Common on expressways and high-speed roads where animals pose a safety hazard.",
+    "image": "no_animals.jpg"
+  },
+  {
+    "sign_id": "no_heavy_vehicles",
+    "name": "HEAVY VEHICLES PROHIBITED",
+    "category": "Prohibitory",
+    "description": "Red-bordered circle with a heavy vehicle silhouette.",
+    "meaning": "Heavy or overloaded vehicles are not allowed to proceed.",
+    "instruction": "Heavy vehicles must not enter this road.",
+    "rules": "Applies near bridges, tunnels and roads with load restrictions.",
+    "image": "no_heavy_vehicles.jpg"
+  },
+  {
+    "sign_id": "end_speed_limit",
+    "name": "END OF SPEED LIMIT",
+    "category": "Prohibitory",
+    "description": "Grey circle with a diagonal grey bar and the number 0.",
+    "meaning": "The previously posted speed restriction is lifted here.",
+    "instruction": "Speed restriction ends; resume normal safe speed for road conditions.",
+    "rules": "Drive at a speed appropriate for the road conditions; other limits may still apply.",
+    "image": "end_speed_limit.jpg"
+  },
+  {
+    "sign_id": "turn_left_ahead",
+    "name": "TURN LEFT AHEAD",
+    "category": "Mandatory",
+    "description": "Blue circle with a white left-turn arrow.",
+    "meaning": "Vehicles must turn left ahead.",
+    "instruction": "Turn left at the junction ahead.",
+    "rules": "Follow the direction indicated; do not go straight or turn right.",
+    "image": "turn_left_ahead.jpg"
+  },
+  {
+    "sign_id": "turn_right_ahead",
+    "name": "TURN RIGHT AHEAD",
+    "category": "Mandatory",
+    "description": "Blue circle with a white right-turn arrow.",
+    "meaning": "Vehicles must turn right ahead.",
+    "instruction": "Turn right at the junction ahead.",
+    "rules": "Follow the direction indicated; do not go straight or turn left.",
+    "image": "turn_right_ahead.jpg"
+  },
+  {
+    "sign_id": "ahead_only",
+    "name": "AHEAD ONLY",
+    "category": "Mandatory",
+    "description": "Blue circle with a white upward arrow.",
+    "meaning": "Vehicles must proceed straight ahead only.",
+    "instruction": "Go straight; turning is not allowed.",
+    "rules": "Left and right turns are not permitted at this junction.",
+    "image": "ahead_only.jpg"
+  },
+  {
+    "sign_id": "keep_left",
+    "name": "KEEP LEFT",
+    "category": "Mandatory",
+    "description": "Blue circle with a white arrow pointing down-left.",
+    "meaning": "Vehicles must keep to the left side of the obstruction or divider.",
+    "instruction": "Keep to the left.",
+    "rules": "Pass the island/divider on its left side.",
+    "image": "keep_left.jpg"
+  },
+  {
+    "sign_id": "keep_right",
+    "name": "KEEP RIGHT",
+    "category": "Mandatory",
+    "description": "Blue circle with a white arrow pointing down-right.",
+    "meaning": "Vehicles must keep to the right side of the obstruction or divider.",
+    "instruction": "Keep to the right.",
+    "rules": "Pass the island/divider on its right side.",
+    "image": "keep_right.jpg"
+  },
+  {
+    "sign_id": "roundabout",
+    "name": "ROUNDABOUT",
+    "category": "Mandatory",
+    "description": "Blue circle with three white arrows going round.",
+    "meaning": "A roundabout (traffic circle) lies ahead; traffic circulates in the indicated direction.",
+    "instruction": "Enter the roundabout and move in the direction shown.",
+    "rules": "Give way to vehicles already on the roundabout; signal before exiting.",
+    "image": "roundabout.jpg"
+  },
+  {
+    "sign_id": "compulsory_horn",
+    "name": "COMPULSORY HORN",
+    "category": "Mandatory",
+    "description": "Blue circle with a white horn.",
+    "meaning": "Drivers must sound the horn here (blind curves/hill roads).",
+    "instruction": "Sound your horn.",
+    "rules": "Warns oncoming traffic around blind corners; use one short honk.",
+    "image": "compulsory_horn.jpg"
+  },
+  {
+    "sign_id": "cycle_track",
+    "name": "CYCLE TRACK",
+    "category": "Mandatory",
+    "description": "Blue circle with a white bicycle.",
+    "meaning": "This lane/track is reserved for bicycles only.",
+    "instruction": "Only cycles may use this track.",
+    "rules": "Motor vehicles must not enter or park on the cycle track.",
+    "image": "cycle_track.jpg"
+  },
+  {
+    "sign_id": "pedestrians_only",
+    "name": "PEDESTRIANS ONLY",
+    "category": "Mandatory",
+    "description": "Blue circle with a white walking person.",
+    "meaning": "This path is reserved for pedestrians.",
+    "instruction": "Only pedestrians may use this path.",
+    "rules": "Vehicles are not permitted on the footpath.",
+    "image": "pedestrians_only.jpg"
+  },
+  {
+    "sign_id": "min_speed_30",
+    "name": "MINIMUM SPEED 30",
+    "category": "Mandatory",
+    "description": "Blue circle with the number 30.",
+    "meaning": "Vehicles must travel at 30 km/h or faster.",
+    "instruction": "Minimum speed is 30 km/h.",
+    "rules": "Slow vehicles should use another route or lane.",
+    "image": "min_speed_30.jpg"
+  },
+  {
+    "sign_id": "go_left",
+    "name": "GO LEFT",
+    "category": "Mandatory",
+    "description": "Blue circle with a white arrow curving to the left.",
+    "meaning": "Vehicles must bear left at the junction ahead.",
+    "instruction": "Bear left at the next junction.",
+    "rules": "Do not continue straight or turn right at this junction.",
+    "image": "go_left.jpg"
+  },
+  {
+    "sign_id": "go_right",
+    "name": "GO RIGHT",
+    "category": "Mandatory",
+    "description": "Blue circle with a white arrow curving to the right.",
+    "meaning": "Vehicles must bear right at the junction ahead.",
+    "instruction": "Bear right at the next junction.",
+    "rules": "Do not continue straight or turn left at this junction.",
+    "image": "go_right.jpg"
+  },
+  {
+    "sign_id": "pass_either_side",
+    "name": "PASS EITHER SIDE",
+    "category": "Mandatory",
+    "description": "Blue circle with two white arrows pointing left and right.",
+    "meaning": "Vehicles may pass the obstruction on either side.",
+    "instruction": "Pass the obstruction on either side.",
+    "rules": "Both lanes around the central island are open; choose either.",
+    "image": "pass_either_side.jpg"
+  },
+  {
+    "sign_id": "stop",
+    "name": "STOP",
+    "category": "Priority",
+    "description": "Red octagon with the white word STOP.",
+    "meaning": "Vehicles must come to a complete halt.",
+    "instruction": "Stop the vehicle completely before proceeding.",
+    "rules": "Proceed only when the way is clear; give way to cross traffic and pedestrians.",
+    "image": "stop.jpg"
+  },
+  {
+    "sign_id": "give_way",
+    "name": "GIVE WAY",
+    "category": "Priority",
+    "description": "Downward-pointing triangle with a red border.",
+    "meaning": "Drivers must give priority to traffic on the main road.",
+    "instruction": "Slow down and give way to other traffic.",
+    "rules": "Stop if necessary; enter the main road only when it is safe.",
+    "image": "give_way.jpg"
+  },
+  {
+    "sign_id": "priority_road",
+    "name": "PRIORITY ROAD",
+    "category": "Priority",
+    "description": "Yellow diamond with white and black borders.",
+    "meaning": "You are on a main road and have the right of way at junctions ahead.",
+    "instruction": "Continue; you have priority over side roads.",
+    "rules": "Remain alert: other drivers may still fail to give way.",
+    "image": "priority_road.jpg"
+  },
+  {
+    "sign_id": "end_priority_road",
+    "name": "END OF PRIORITY ROAD",
+    "category": "Priority",
+    "description": "Yellow diamond crossed by grey diagonal lines.",
+    "meaning": "The priority (right-of-way) status of this road ends.",
+    "instruction": "Priority ends; give way as per normal junction rules.",
+    "rules": "Prepare to slow down and yield at the next junction.",
+    "image": "end_priority_road.jpg"
+  },
+  {
+    "sign_id": "pedestrian_crossing",
+    "name": "PEDESTRIAN CROSSING",
+    "category": "Warning",
+    "description": "Red-bordered triangle with a walking person above zebra stripes.",
+    "meaning": "A pedestrian crossing is ahead.",
+    "instruction": "Slow down and give way to pedestrians.",
+    "rules": "Stop for pedestrians already on the crossing; no overtaking near it.",
+    "image": "pedestrian_crossing.jpg"
+  },
+  {
+    "sign_id": "school_ahead",
+    "name": "SCHOOL AHEAD",
+    "category": "Warning",
+    "description": "Red-bordered triangle with an adult and a child.",
+    "meaning": "A school zone is ahead; children may cross.",
+    "instruction": "Reduce speed and drive carefully; watch for children.",
+    "rules": "Horn use and overtaking are discouraged; obey the school-zone speed limit.",
+    "image": "school_ahead.jpg"
+  },
+  {
+    "sign_id": "left_curve",
+    "name": "LEFT CURVE",
+    "category": "Warning",
+    "description": "Red-bordered triangle with a curved arrow to the left.",
+    "meaning": "The road curves to the left ahead.",
+    "instruction": "Slow down and keep left through the curve.",
+    "rules": "Do not overtake on curves.",
+    "image": "left_curve.jpg"
+  },
+  {
+    "sign_id": "right_curve",
+    "name": "RIGHT CURVE",
+    "category": "Warning",
+    "description": "Red-bordered triangle with a curved arrow to the right.",
+    "meaning": "The road curves to the right ahead.",
+    "instruction": "Slow down and keep left through the curve.",
+    "rules": "Do not overtake on curves.",
+    "image": "right_curve.jpg"
+  },
+  {
+    "sign_id": "hairpin_bend",
+    "name": "HAIRPIN BEND",
+    "category": "Warning",
+    "description": "Red-bordered triangle with a U-shaped bend arrow.",
+    "meaning": "A sharp hairpin bend is ahead.",
+    "instruction": "Reduce speed sharply and drive in low gear.",
+    "rules": "Sound the horn on blind bends; trucks should take extra care.",
+    "image": "hairpin_bend.jpg"
+  },
+  {
+    "sign_id": "road_narrows",
+    "name": "ROAD NARROWS",
+    "category": "Warning",
+    "description": "Red-bordered triangle with two converging curved lines.",
+    "meaning": "The road becomes narrower ahead.",
+    "instruction": "Slow down and be ready to give way to oncoming traffic.",
+    "rules": "Do not overtake; allow oncoming vehicles to pass first when required.",
+    "image": "road_narrows.jpg"
+  },
+  {
+    "sign_id": "slippery_road",
+    "name": "SLIPPERY ROAD",
+    "category": "Warning",
+    "description": "Red-bordered triangle with a skidding car.",
+    "meaning": "The road surface may be slippery (wet, oily or icy).",
+    "instruction": "Slow down and avoid sudden braking or steering.",
+    "rules": "Increase following distance; use gentle controls.",
+    "image": "slippery_road.jpg"
+  },
+  {
+    "sign_id": "falling_rocks",
+    "name": "FALLING ROCKS",
+    "category": "Warning",
+    "description": "Red-bordered triangle with rocks tumbling down a slope.",
+    "meaning": "Rocks may fall onto the road ahead.",
+    "instruction": "Drive carefully and do not stop in this zone.",
+    "rules": "Watch for debris on the road and be ready to stop.",
+    "image": "falling_rocks.jpg"
+  },
+  {
+    "sign_id": "speed_breaker",
+    "name": "SPEED BREAKER",
+    "category": "Warning",
+    "description": "Red-bordered triangle with a hump.",
+    "meaning": "A speed breaker (hump) is ahead.",
+    "instruction": "Slow down before the speed breaker.",
+    "rules": "Crossing at high speed can damage the vehicle and cause loss of control.",
+    "image": "speed_breaker.jpg"
+  },
+  {
+    "sign_id": "cross_road",
+    "name": "CROSS ROAD",
+    "category": "Warning",
+    "description": "Red-bordered triangle with a plus sign.",
+    "meaning": "A four-way crossroad is ahead.",
+    "instruction": "Slow down and look out for crossing traffic.",
+    "rules": "Follow right-of-way rules; be ready to stop.",
+    "image": "cross_road.jpg"
+  },
+  {
+    "sign_id": "t_junction",
+    "name": "T-JUNCTION",
+    "category": "Warning",
+    "description": "Red-bordered triangle with a T-shaped junction.",
+    "meaning": "A T-junction is ahead; the road ends and joins another.",
+    "instruction": "Slow down and prepare to turn or give way.",
+    "rules": "Check both directions before entering the main road.",
+    "image": "t_junction.jpg"
+  },
+  {
+    "sign_id": "roundabout_ahead",
+    "name": "ROUNDABOUT AHEAD",
+    "category": "Warning",
+    "description": "Red-bordered triangle with three circular arrows.",
+    "meaning": "A roundabout is ahead.",
+    "instruction": "Slow down and prepare to give way at the roundabout.",
+    "rules": "Give way to traffic already circulating.",
+    "image": "roundabout_ahead.jpg"
+  },
+  {
+    "sign_id": "signals_ahead",
+    "name": "TRAFFIC SIGNALS AHEAD",
+    "category": "Warning",
+    "description": "Red-bordered triangle with a traffic light.",
+    "meaning": "Traffic lights are ahead.",
+    "instruction": "Slow down and be ready to stop at the signal.",
+    "rules": "Obey the signal colours: red = stop, amber = get ready, green = go.",
+    "image": "signals_ahead.jpg"
+  },
+  {
+    "sign_id": "level_crossing",
+    "name": "LEVEL CROSSING",
+    "category": "Warning",
+    "description": "Red-bordered triangle with a cross.",
+    "meaning": "A railway level crossing is ahead.",
+    "instruction": "Slow down and stop if a train is approaching.",
+    "rules": "Never cross when the barrier is down or the alarm is sounding.",
+    "image": "level_crossing.jpg"
+  },
+  {
+    "sign_id": "men_at_work",
+    "name": "MEN AT WORK",
+    "category": "Warning",
+    "description": "Red-bordered triangle with a worker and a heap of earth.",
+    "meaning": "Road works are in progress ahead.",
+    "instruction": "Slow down and follow the diversion or flagman.",
+    "rules": "Drive carefully; workers may be on the road.",
+    "image": "men_at_work.jpg"
+  },
+  {
+    "sign_id": "steep_descent",
+    "name": "STEEP DESCENT",
+    "category": "Warning",
+    "description": "Red-bordered triangle with a downhill slope and '10%'.",
+    "meaning": "A steep downhill gradient of 10% is ahead.",
+    "instruction": "Use a low gear and control speed; avoid hard braking.",
+    "rules": "Do not coast in neutral; overtaking is dangerous.",
+    "image": "steep_descent.jpg"
+  },
+  {
+    "sign_id": "steep_ascent",
+    "name": "STEEP ASCENT",
+    "category": "Warning",
+    "description": "Red-bordered triangle with an uphill slope and '10%'.",
+    "meaning": "A steep uphill gradient of 10% is ahead.",
+    "instruction": "Shift to a lower gear and keep a steady speed.",
+    "rules": "Give way to descending vehicles where the road is narrow.",
+    "image": "steep_ascent.jpg"
+  },
+  {
+    "sign_id": "two_way_traffic",
+    "name": "TWO-WAY TRAFFIC",
+    "category": "Warning",
+    "description": "Red-bordered triangle with an up arrow and a down arrow.",
+    "meaning": "Traffic flows in both directions ahead.",
+    "instruction": "Keep to your side and watch for oncoming vehicles.",
+    "rules": "Do not overtake unless the road is clearly free.",
+    "image": "two_way_traffic.jpg"
+  },
+  {
+    "sign_id": "animals_crossing",
+    "name": "ANIMALS CROSSING",
+    "category": "Warning",
+    "description": "Red-bordered triangle with an animal.",
+    "meaning": "Animals may cross the road ahead.",
+    "instruction": "Slow down and be ready to stop.",
+    "rules": "Use the horn gently and never hit or frighten animals.",
+    "image": "animals_crossing.jpg"
+  },
+  {
+    "sign_id": "general_danger",
+    "name": "GENERAL DANGER",
+    "category": "Warning",
+    "description": "Red-bordered triangle with an exclamation mark.",
+    "meaning": "An unspecified danger lies ahead.",
+    "instruction": "Be extra careful and reduce speed.",
+    "rules": "Look for other signs or road conditions that explain the hazard.",
+    "image": "general_danger.jpg"
+  },
+  {
+    "sign_id": "uneven_road",
+    "name": "UNEVEN ROAD",
+    "category": "Warning",
+    "description": "Red-bordered triangle with an uneven road surface.",
+    "meaning": "The road surface is uneven, bumpy, or has potholes ahead.",
+    "instruction": "Reduce speed and hold the steering firmly.",
+    "rules": "Sudden bumps can cause loss of control; keep both hands on the wheel.",
+    "image": "uneven_road.jpg"
+  },
+  {
+    "sign_id": "loose_gravel",
+    "name": "LOOSE GRAVEL",
+    "category": "Warning",
+    "description": "Red-bordered triangle with stones on a road surface.",
+    "meaning": "Loose gravel on the road ahead may cause skidding.",
+    "instruction": "Slow down and avoid sudden braking or sharp steering.",
+    "rules": "Keep a greater following distance to protect from flying stones.",
+    "image": "loose_gravel.jpg"
+  },
+  {
+    "sign_id": "flood_road",
+    "name": "FLOOD / WATERLOGGED ROAD",
+    "category": "Warning",
+    "description": "Red-bordered triangle with wavy water lines.",
+    "meaning": "The road ahead may be flooded or waterlogged.",
+    "instruction": "Slow down and check the water depth before crossing.",
+    "rules": "Do not enter deeply flooded stretches; your vehicle may stall or be swept away.",
+    "image": "flood_road.jpg"
+  },
+  {
+    "sign_id": "side_road_left",
+    "name": "SIDE ROAD LEFT",
+    "category": "Warning",
+    "description": "Red-bordered triangle with a T-shaped road exiting to the left.",
+    "meaning": "A side road joins the main road from the left ahead.",
+    "instruction": "Watch for traffic entering from the left.",
+    "rules": "Slow down; traffic from side roads must give way to you.",
+    "image": "side_road_left.jpg"
+  },
+  {
+    "sign_id": "side_road_right",
+    "name": "SIDE ROAD RIGHT",
+    "category": "Warning",
+    "description": "Red-bordered triangle with a T-shaped road exiting to the right.",
+    "meaning": "A side road joins the main road from the right ahead.",
+    "instruction": "Watch for traffic entering from the right.",
+    "rules": "Slow down; traffic from side roads must give way to you.",
+    "image": "side_road_right.jpg"
+  },
+  {
+    "sign_id": "staggered_junction",
+    "name": "STAGGERED JUNCTION",
+    "category": "Warning",
+    "description": "Red-bordered triangle with a staggered crossroads symbol.",
+    "meaning": "A staggered (offset) crossroads junction is ahead.",
+    "instruction": "Slow down and observe carefully for crossing traffic.",
+    "rules": "Multiple roads merge in a short distance; proceed with caution.",
+    "image": "staggered_junction.jpg"
+  },
+  {
+    "sign_id": "narrow_bridge",
+    "name": "NARROW BRIDGE",
+    "category": "Warning",
+    "description": "Red-bordered triangle with a narrow bridge symbol.",
+    "meaning": "A narrow bridge is ahead; one lane may apply.",
+    "instruction": "Slow down and give way to oncoming traffic if the bridge is one-lane wide.",
+    "rules": "Do not race to cross first; large vehicles may need extra space.",
+    "image": "narrow_bridge.jpg"
+  },
+  {
+    "sign_id": "accident_zone",
+    "name": "ACCIDENT PRONE ZONE",
+    "category": "Warning",
+    "description": "Red-bordered triangle with a car crash symbol.",
+    "meaning": "This stretch has a high frequency of road accidents.",
+    "instruction": "Drive with extra caution; reduce speed and stay alert.",
+    "rules": "Avoid distractions; maintain safe following distances at all times.",
+    "image": "accident_zone.jpg"
+  },
+  {
+    "sign_id": "double_bend",
+    "name": "DOUBLE BEND",
+    "category": "Warning",
+    "description": "Red-bordered triangle with an S-shaped bend arrow.",
+    "meaning": "Two consecutive curves ahead — first left, then right.",
+    "instruction": "Reduce speed and keep to the left; do not overtake.",
+    "rules": "Sudden changes of direction; watch for oncoming traffic on blind segments.",
+    "image": "double_bend.jpg"
+  },
+  {
+    "sign_id": "risk_grounding",
+    "name": "RISK OF GROUNDING",
+    "category": "Warning",
+    "description": "Red-bordered triangle with a humped bridge and a car scraping the road.",
+    "meaning": "Low ground clearance vehicles risk grounding on the road feature ahead.",
+    "instruction": "Low vehicles should approach slowly and at an angle if possible.",
+    "rules": "Trucks and buses with low clearance should take an alternate route.",
+    "image": "risk_grounding.jpg"
+  },
+  {
+    "sign_id": "parking",
+    "name": "PARKING",
+    "category": "Informatory",
+    "description": "Blue square with a white letter P.",
+    "meaning": "A parking area is available here.",
+    "instruction": "You may park your vehicle in this area.",
+    "rules": "Park only within the marked bays; pay the fee if required.",
+    "image": "parking.jpg"
+  },
+  {
+    "sign_id": "hospital",
+    "name": "HOSPITAL",
+    "category": "Informatory",
+    "description": "Blue square with a white letter H.",
+    "meaning": "A hospital is nearby.",
+    "instruction": "Drive quietly and give way to ambulances.",
+    "rules": "Horn use is restricted; keep the road clear for emergency vehicles.",
+    "image": "hospital.jpg"
+  },
+  {
+    "sign_id": "fuel_station",
+    "name": "PETROL PUMP",
+    "category": "Informatory",
+    "description": "Blue square with a fuel pump.",
+    "meaning": "A petrol/fuel station is ahead.",
+    "instruction": "Fuel is available ahead; slow down to enter safely.",
+    "rules": "Do not smoke or use open flames near the pump.",
+    "image": "fuel_station.jpg"
+  },
+  {
+    "sign_id": "bus_stop",
+    "name": "BUS STOP",
+    "category": "Informatory",
+    "description": "Blue square with a bus.",
+    "meaning": "A bus stop is located here.",
+    "instruction": "Give way to buses and pedestrians; do not park here.",
+    "rules": "Parking at a bus stop obstructs public transport and is an offence.",
+    "image": "bus_stop.jpg"
+  },
+  {
+    "sign_id": "one_way",
+    "name": "ONE WAY",
+    "category": "Informatory",
+    "description": "Blue square with a white arrow.",
+    "meaning": "Traffic is permitted in one direction only.",
+    "instruction": "Drive only in the direction of the arrow.",
+    "rules": "Driving against the arrow is an offence.",
+    "image": "one_way.jpg"
+  },
+  {
+    "sign_id": "dead_end",
+    "name": "DEAD END",
+    "category": "Informatory",
+    "description": "Blue square with a road ending in a red bar.",
+    "meaning": "The road ahead has no through way.",
+    "instruction": "No through road; plan to turn around.",
+    "rules": "Do not enter unless you have business there.",
+    "image": "dead_end.jpg"
+  },
+  {
+    "sign_id": "first_aid",
+    "name": "FIRST AID",
+    "category": "Informatory",
+    "description": "Blue square with a green cross.",
+    "meaning": "A first-aid post is available here.",
+    "instruction": "First-aid help is available nearby.",
+    "rules": "Keep the area clear for emergency use.",
+    "image": "first_aid.jpg"
+  },
+  {
+    "sign_id": "telephone",
+    "name": "TELEPHONE",
+    "category": "Informatory",
+    "description": "Blue square with a telephone handset.",
+    "meaning": "An emergency/public telephone is available.",
+    "instruction": "A phone is available here if you need help.",
+    "rules": "Use it to report accidents or breakdowns.",
+    "image": "telephone.jpg"
+  },
+  {
+    "sign_id": "tourist_info",
+    "name": "TOURIST INFORMATION",
+    "category": "Informatory",
+    "description": "Blue square with a white letter i.",
+    "meaning": "Tourist or visitor information centre nearby.",
+    "instruction": "Tourist information is available here.",
+    "rules": "Stop to get maps, guidance, or local attraction details.",
+    "image": "tourist_info.jpg"
+  },
+  {
+    "sign_id": "rest_area",
+    "name": "REST AREA",
+    "category": "Informatory",
+    "description": "Blue square with a picnic table and tree symbol.",
+    "meaning": "A rest area for drivers is ahead.",
+    "instruction": "You may stop to rest, eat, or use facilities here.",
+    "rules": "Fatigue is dangerous; take a break if tired before continuing your journey.",
+    "image": "rest_area.jpg"
+  },
+  {
+    "sign_id": "toll_ahead",
+    "name": "TOLL AHEAD",
+    "category": "Informatory",
+    "description": "Blue square with a toll barrier and TOLL text.",
+    "meaning": "A toll plaza is ahead; a fee must be paid to proceed.",
+    "instruction": "Prepare payment or FASTag and slow down for the toll booth.",
+    "rules": "Keep your lane; do not jump queues or reverse at the toll plaza.",
+    "image": "toll_ahead.jpg"
+  },
+  {
+    "sign_id": "petrol_ahead",
+    "name": "PETROL STATION AHEAD",
+    "category": "Informatory",
+    "description": "Blue square with a fuel pump and a directional arrow.",
+    "meaning": "A petrol/fuel station is coming up ahead.",
+    "instruction": "Fuel station is available shortly ahead on this road.",
+    "rules": "Look for the turn; do not stop on the main road.",
+    "image": "petrol_ahead.jpg"
+  },
+  {
+    "sign_id": "no_through_road_right",
+    "name": "NO THROUGH ROAD ON RIGHT",
+    "category": "Informatory",
+    "description": "Blue square with a road dead-ending to the right.",
+    "meaning": "The road to the right has no through way.",
+    "instruction": "The right branch of the junction is a dead end; plan accordingly.",
+    "rules": "Do not enter the right branch unless you have business there.",
+    "image": "no_through_road_right.jpg"
+  },
+  {
+    "sign_id": "red_light",
+    "name": "RED LIGHT",
+    "category": "Traffic Signal",
+    "description": "Traffic light showing red.",
+    "meaning": "Vehicles must stop.",
+    "instruction": "Stop behind the stop line and wait.",
+    "rules": "Crossing a red light is a punishable offence.",
+    "image": "red_light.jpg"
+  },
+  {
+    "sign_id": "amber_light",
+    "name": "AMBER LIGHT",
+    "category": "Traffic Signal",
+    "description": "Traffic light showing amber (yellow).",
+    "meaning": "The signal is about to change to red.",
+    "instruction": "Slow down and prepare to stop.",
+    "rules": "Stop if it is safe to do so; do not accelerate to beat the light.",
+    "image": "amber_light.jpg"
+  },
+  {
+    "sign_id": "green_light",
+    "name": "GREEN LIGHT",
+    "category": "Traffic Signal",
+    "description": "Traffic light showing green.",
+    "meaning": "Vehicles may proceed.",
+    "instruction": "Go, but check that the junction is clear.",
+    "rules": "Give way to pedestrians and vehicles still clearing the junction.",
+    "image": "green_light.jpg"
+  }
+]

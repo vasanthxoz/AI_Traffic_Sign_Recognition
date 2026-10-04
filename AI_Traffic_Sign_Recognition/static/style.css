@@ -1,0 +1,26 @@
+:root{--bg:#0d1117;--panel:#161b22;--panel2:#1f2733;--line:#2d3748;--text:#e6edf3;--muted:#8b98a9;--accent:#4aa3ff;--ok:#3fb950;--bad:#f85149}
+*{box-sizing:border-box}
+body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+header{background:linear-gradient(135deg,#0b2447,#19376d);padding:20px 28px;border-bottom:1px solid var(--line)}
+header h1{margin:0;font-size:1.6rem}header p{margin:4px 0 12px;color:#aebbd0}
+nav a{color:#fff;margin-right:18px;text-decoration:none;font-weight:600;border-bottom:2px solid var(--accent);padding-bottom:2px}
+main{max-width:1100px;margin:24px auto;padding:0 16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:22px;margin-bottom:18px;box-shadow:0 4px 18px rgba(0,0,0,.35)}
+h2,h3{margin-top:0}
+button,.btn{background:var(--accent);color:#04121f;border:0;border-radius:8px;padding:10px 20px;font-size:1rem;font-weight:600;cursor:pointer;text-decoration:none;display:inline-block}
+button:hover,.btn:hover{filter:brightness(1.1)}
+input[type=file]{margin-right:12px;color:var(--muted);background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:8px}
+input[type=file]::file-selector-button{background:#2b3a50;color:var(--text);border:0;border-radius:6px;padding:6px 12px;margin-right:10px;cursor:pointer}
+.error{color:var(--bad);font-weight:600}.muted{color:var(--muted)}
+.flow{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;counter-reset:s}
+.flow li{background:var(--panel2);border:1px solid var(--line);padding:8px 14px;border-radius:20px;counter-increment:s}
+.flow li:before{content:counter(s) ". ";font-weight:700;color:var(--accent)}
+.result{display:flex;gap:24px;flex-wrap:wrap;border-left:8px solid var(--ok)}
+.result.unknown{border-left-color:var(--bad)}
+.pics{display:flex;gap:12px}figure{margin:0;text-align:center;color:var(--muted);font-size:.85rem}
+.pics img{width:200px;height:200px;object-fit:contain;border:1px solid var(--line);border-radius:8px;background:#fff}
+.info{flex:1;min-width:280px}.info h2{color:var(--accent)}
+table{border-collapse:collapse;width:100%}th{text-align:left;width:170px;vertical-align:top;color:var(--muted)}
+th,td{padding:8px;border-bottom:1px solid var(--line)}
+.rules li{margin:6px 0}code{background:#0b2447;color:#9cc9ff;padding:1px 6px;border-radius:4px;font-size:.8rem}
+a{color:var(--accent)}
